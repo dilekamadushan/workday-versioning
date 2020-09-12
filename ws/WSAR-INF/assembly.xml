@@ -14,7 +14,8 @@
         <cc:workday-in id="StartHere" routes-to="PutIntegrationMessage">
             <cc:integration-system name="Test-Versioning"/>
         </cc:workday-in>
-        <cc:local-out id="PutIntegrationMessage" endpoint="vm://wcc/PutIntegrationMessage"><cc:set name="is.message.severity" value="'INFO'"/><cc:set name="is.message.summary" value="'Success'"/></cc:local-out>
+        <cc:local-out id="PutIntegrationMessage" routes-response-to="PutIntegrationMessage0" endpoint="vm://wcc/PutIntegrationMessage"><cc:set name="is.message.severity" value="'INFO'"/><cc:set name="is.message.summary" value="'Success'"/></cc:local-out>
+        <cc:local-out id="PutIntegrationMessage0" endpoint="vm://wcc/PutIntegrationMessage"/>
 	</cc:assembly>
 
 </beans>

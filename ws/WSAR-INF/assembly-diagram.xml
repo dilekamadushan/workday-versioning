@@ -7,8 +7,15 @@
   <visualProperties x="415" y="92">
     <element href="assembly.xml#PutIntegrationMessage"/>
   </visualProperties>
+  <visualProperties x="636" y="114">
+    <element href="assembly.xml#PutIntegrationMessage0"/>
+  </visualProperties>
   <connections type="routesTo" sourceAnchorX="1.0" sourceAnchorY="0.4594594594594595" targetAnchorX="0.26229508196721313" targetAnchorY="0.1891891891891892">
     <source href="assembly.xml#StartHere"/>
     <target href="assembly.xml#PutIntegrationMessage"/>
+  </connections>
+  <connections type="routesResponseTo" sourceAnchorX="0.9234972677595629" sourceAnchorY="1.0" targetAnchorX="0.22105263157894736" targetAnchorY="0.5945945945945946">
+    <source href="assembly.xml#PutIntegrationMessage"/>
+    <target href="assembly.xml#PutIntegrationMessage0"/>
   </connections>
 </wdnm:Diagram>
